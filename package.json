@@ -1,0 +1,23 @@
+{
+  "name": "Docker-Nodejs-Postgres-Demo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node_modules/.bin/babel-node index.js --presets env",
+    "watch": "node_modules/.bin/babel-watch index.js --presets env -L",
+    "migrate": "node-pg-migrate"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "http-errors": "^1.6.3",
+    "node-pg-migrate": "^3.14.2",
+    "pg": "^7.7.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-watch": "^2.0.7"
+  }
+}
